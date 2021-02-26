@@ -1,0 +1,336 @@
+aside, img, object, embed, video 
+	{
+	max-width: 100%;
+	}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img 
+	{
+	width:100%;
+	
+	}
+
+
+/* Clearfix */
+.clearfix:before, .clearfix:after
+	{
+	content: " ";
+	display: table;
+	}
+									
+									
+.clearfix:after
+	{
+	clear: both;
+	}
+
+.clearfix
+	{
+	*zoom: 1;
+	}
+
+
+/* Basic Styles */
+#container 
+	{
+	max-width: 62em; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+nav
+	{
+	height: 40px;
+	width: 100%;
+	background: #725174;
+	font-size: 10pt;
+	font-family:  Arial, Verdana, sans-serif;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 2px solid #283744;
+	}
+	
+nav ul
+	{
+	padding: 0;
+	margin: 0 auto;
+	width: 1000px;
+	height: 40px;
+	}
+		
+		
+nav li
+	{
+	display: inline;
+	float: left;
+	}
+		
+		
+nav a
+	{
+	color: #fff;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+	}
+		
+nav li a
+	{
+	border-right: 1px solid #5d0fee;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	}
+							
+nav li:last-child a
+	{
+	border-right: 0;
+	}
+
+nav a:hover, nav a:active
+	{
+	background-color: #f5b9f5;
+	}
+
+nav a#pull
+	{
+	display: none;
+	}
+
+
+/* Paragraph styles */
+p {
+   	text-align: right;
+    font-family: Georgia, 'Times New Roman', Times;
+    
+   }
+
+/* HEADER STYLES */
+
+header
+	{
+	padding: 10px;
+	border-bottom: solid 2px rgb(0, 0, 0);
+	}
+		
+
+header h1
+	{
+	font-family: Georgia, 'Times New Roman', Times;
+	color:tomato;
+	letter-spacing: 15px;
+	margin-top: 0px;
+	}
+
+
+/* SECTION STYLES */
+
+section 
+	{
+	font-family: Georgia, 'Times New Roman', Times;
+	}
+
+section h1
+	{
+	font-family: Georgia, 'Times New Roman', Times;
+	}
+
+
+/* ASIDE STYLES */
+
+aside
+	{
+	float: left;
+	width: 18.5em;
+	min-width: 280px;
+	border: solid 2px #220025;
+	background-color: #e7d8e5;
+	padding: .6em;
+	margin-left: .6em;
+	font-size: .8em;
+	}
+
+aside h2
+	{
+	text-align: center;
+	}
+
+
+/* FIGURE STYLES */
+
+
+figure
+	{
+	margin: .5em;
+	width: 45%;
+	min-width: 270px;
+	}
+
+figcaption	
+	{
+	text-align: left;
+	color: #ffffff;
+	font-size: .8em;
+	}
+
+/*IMAGE FLOAT */
+
+.mainPageImage
+	{
+	float: right;
+		
+	
+	} 
+.mainFactsImage
+	{
+		float: right;
+	}
+
+.studiesImage
+	{
+		float:right;
+	}
+
+
+.contactInfo
+	{
+		list-style: none;
+		font-size: 1.5em;
+	}
+/* FOOTER STYLES */
+
+footer
+	{
+	padding-top: .6em;
+	font-size: .8em;
+	font-family: arial, tahoma, sans-serif;
+	border-top: 2px solid #000000;
+	}
+
+
+
+/*Styles for screen 1000px and lower*/
+@media screen and (max-width: 1000px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+nav
+	{
+	height: auto;
+	}
+
+nav ul
+	{
+	width: 100%;
+  	display: block;
+  	height: auto;
+	}
+		
+nav li
+	{
+	width: 50%;
+  	float: left;
+  	position: relative;
+	}
+		
+nav li a
+	{
+	border-bottom: 1px solid #576979;
+	border-right: 1px solid #576979;
+	}
+			
+nav a
+	{
+	text-align: left;
+	width: 100%;
+	text-indent: 25px;
+	}
+	
+	
+}
+
+
+
+
+
+/*Styles for screen 480px and lower*/
+@media only screen and (max-width : 480px) {
+
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+			
+nav 
+	{
+	border-bottom: 0;
+	}
+
+nav ul
+	{
+	display: none;
+	height: auto;
+	}
+		
+nav a#pull
+	{
+	display: block;
+	background-color: #283744;
+	width: 100%;
+	position: relative;
+	}
+			
+nav a#pull:after
+	{
+	content:"";
+	background: url('../images/nav-icon.png') no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	}
+					
+
+}
+
+
+
+
+
+@media only screen and (max-width : 320px) {
+	
+#container
+	{
+	width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+	}
+			
+nav li
+	{
+	display: block;
+	float: none;
+	width: 100%;
+	}
+
+nav li a
+	{
+	border-bottom: 1px solid #576979;
+	}
+
+}
+
+
